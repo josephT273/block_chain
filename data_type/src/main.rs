@@ -11,10 +11,21 @@ fn bool_type() {
 }
 
 
+fn tupl_type () {
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (x, y, z) = tup;
+    println!("Tup: {x}, {y}, {z}");
+
+    // another way of accessing tuple
+    println!("Value of the first number is: {0}", tup.0)
+}
+
 
 fn main() {
     char_type();
     bool_type();
+
+    tupl_type();
 
     // addition
     let sum = 5 + 10;
