@@ -1,4 +1,21 @@
+fn char_type() {
+    let a = 'A';
+    let z: char = 'Z';
+    println!("{a} {z}");
+}
+
+fn bool_type() {
+    let is_exist = true;
+    let is_valid: bool = false;
+    println!("Is Exist {is_exist} and is valid {is_valid}");
+}
+
+
+
 fn main() {
+    char_type();
+    bool_type();
+
     // addition
     let sum = 5 + 10;
     println!("Sum of 5 + 10 = {sum}");
