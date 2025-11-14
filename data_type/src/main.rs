@@ -21,11 +21,17 @@ fn tupl_type () {
 }
 
 
+fn array_type() {
+    let arr: [i32; 6] = [1, 2, 3, 4, 5, 6];
+    println!("Value of array {0}, {1}", arr[0], arr[1]);
+}
+
 fn main() {
     char_type();
     bool_type();
 
     tupl_type();
+    array_type();
 
     // addition
     let sum = 5 + 10;
