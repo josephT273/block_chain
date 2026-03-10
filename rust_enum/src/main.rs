@@ -1,25 +1,14 @@
-enum IpAddrKind {
-    V4,
-    V6,
-}
+struct Ipv4Addr {}
 
-struct IpAddr {
-    kind: IpAddrKind,
-    address: String,
-}
+struct Ipv6Addr {}
 
-fn route(ip_kind: IpAddrKind) {}
+enum IpAddr {
+    V4(Ipv4Addr),
+    V6(Ipv6Addr),
+}
 
 fn main() {
-    let home = IpAddr {
-        kind: IpAddrKind::V4,
-        address: String::from("127.0.0.1"),
-    };
-
-    let loopback = IpAddr {
-        kind: IpAddrKind::V6,
-        address: String::from("::1"),
-    };
-
-    println!("Home: {home} loopback: {loopback}");
+    let some_number = Some(5);
+    let some_char = Some('e');
+    let absent_number: Option<i32> = None;
 }
